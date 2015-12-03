@@ -1,0 +1,28 @@
+{
+  "name": "fdecampredon.brackets-eslint",
+  "title": "ESLint",
+  "description": "Adds ESLint support to Brackets.",
+  "homepage": "https://github.com/fdecampredon/brackets-eslint",
+  "version": "0.0.1",
+  "keywords": [
+    "lint", 
+    "linting", 
+    "linter", 
+    "eslint", 
+    "react", 
+    "jsx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fdecampredon/brackets-eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fdecampredon/brackets-eslint/issues"
+  },
+  "categories": "linting",
+  "author": "François de Campredon <francois.de.campredon@gmail.com> (https://github.com/fdecampredon/)",
+  "license": "Apache-2.0",
+  "engines": {
+    "brackets": ">=1.5.0"
+  }
+}
