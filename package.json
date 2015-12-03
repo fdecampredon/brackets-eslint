@@ -1,6 +1,6 @@
 {
   "name": "fdecampredon.brackets-eslint",
-  "title": "ESLint",
+  "title": "brackets-eslint",
   "description": "Adds ESLint support to Brackets.",
   "homepage": "https://github.com/fdecampredon/brackets-eslint",
   "version": "0.0.1",
