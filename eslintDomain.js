@@ -21,14 +21,14 @@ var hasCustomEslint = false;
 function isDir(path) {
   try {
     return fs.statSync(path).isDirectory()
-  } catch(e) {}
+  } catch (e) {}
   return false;
 }
 
 function isFile(path) {
   try {
     return fs.statSync(path).isFile()
-  } catch(e) {}
+  } catch (e) {}
   return false;
 }
 
@@ -76,7 +76,7 @@ function updateConfigs() {
         var customCLIEngine;
         try {
           customCLIEngine = require(eslintPath).CLIEngine
-        } catch(e) {}
+        } catch (e) {}
         
         if (customCLIEngine) {
           CLIEngine = customCLIEngine;
@@ -109,14 +109,9 @@ function lintFile(fullPath, projectRoot, callback) {
     if (err) {
       return callback(errorToString(err));
     }
-    var fileName = path.relative(projectRoot, fullPath);
-    if (fileName.indexOf('..') === 0) {
-      fileName = fullPath; 
-    }
-    process.chdir(projectRoot);
     var res;
     try {
-      res = cli.executeOnText(text, fileName);
+      res = cli.executeOnText(text, fullPath);
     } catch (e) {
       err = errorToString(e)
     }
