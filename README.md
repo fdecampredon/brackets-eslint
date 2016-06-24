@@ -1,5 +1,7 @@
 # brackets-eslint
 
+> I'm nice extension, really easy to live with, I don't eat too much time, and I desperatly need a new master (maintainer) please adopt me :dog2:
+
 Adds [ESLint](http://eslint.org/) support to Brackets.
 
 ## Installation
